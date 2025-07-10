@@ -6,25 +6,31 @@
 </head>
 <body>
     <form method="POST" action="">
-        <label for="numero_par_impar">Verifica se é par ou impar:</label>
-        <input type="number" id="numero_par_impar" name="numero_par_impar" required>
-        <button type="submit" name="verificar_primo">Verificar</button>
+        <label for="numero_primo">Verifica se é um número par ou impar :</label>
+        <input type="number" id="numero_primo" name="numero_primo" required>
+        <button type="submit" name="verificar_par">Verificar</button>
    </form>
 
-    <?php 
-        
-        if($_SERVER['REQUEST_METHOD'] == 'POST'){
+   <?php
+   
+   if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
-            $numero = 2;
+    if(isset($_POST['verificar_par'])){
+        $numero = $_POST['numero_primo'];
+        $ehPrimo = true;
+        if($numero % 2 == 0){
+            echo 'é um número par';
+        }else{
+            echo 'é um número impar';
+                }
+            };
 
-                if($numero % 2 == 0){
-                    echo "$numero é par.";
-                }else {
-                    echo "$numero é impar";
-                };
-        }
-        
-    ?>
+   };
+
+   ?>
     
 </body>
 </html>
+
+
+            
