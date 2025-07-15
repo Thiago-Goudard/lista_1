@@ -6,7 +6,7 @@
 </head>
 <body>
     <form method="POST" action="">
-        <label for="numero">me de 2 numeros e irei exibir a soma de todos os números entre eles:</label>
+        <label for="numero">Me de 2 numeros e irei exibir a soma de todos os números entre eles:</label>
         <input type="number" id="numero1" name="numero1" required>
         <input type="number" id="numero2" name="numero2" required>
         <button type="submit" name="contar">Somar</button>
