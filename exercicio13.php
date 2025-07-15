@@ -7,7 +7,7 @@
 <body>
     <form method="POST" action="">
         <label for="celsius">Converter graus Celsius para Fahrenheit:</label>
-        <input type="text" id="celsius" name="celsius" required>
+        <input type="number" id="celsius" name="celsius" required>
         <button type="submit" name="converter">Converter</button>
     </form>
 
